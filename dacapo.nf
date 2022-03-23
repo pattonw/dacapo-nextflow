@@ -3,7 +3,7 @@ nextflow.enable.dsl=2
 
 process dacapo {
     cpus params.cpus
-    conda '/groups/scicompsoft/home/ackermand/miniconda3/envs/dacapo'
+    conda '/groups/mousebrainmicro/home/pattonw/miniconda3/envs/dacapo-refactor'
     script:
       """
       dacapo train -r ${params.run_name}
