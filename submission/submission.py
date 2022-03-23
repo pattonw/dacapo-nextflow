@@ -13,7 +13,7 @@ headers = {
 def get_login_node_credentials():
     res = requests.get(url=f"{nextflow_api}/credentials", headers=headers)
     for credential in res.json()["credentials"]:
-        if credential["name"] == "login_node":
+        if credential["name"] == "test":
             credential_id = credential["id"]
 
     return credential_id
